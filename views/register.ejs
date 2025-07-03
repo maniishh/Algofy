@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<section class="form-section">
+  <h2>Register</h2>
+  <form method="POST" action="/register" enctype="multipart/form-data">
+  <input name="username" placeholder="Username" required />
+  <input name="email" placeholder="Email" type="email" required />
+  <input name="branch" placeholder="Branch" required />
+  <input name="password" type="password" placeholder="Password" required />
+  <label>Upload Profile Picture</label>
+  <input type="file" name="profile_pic" accept="image/*" />
+  <button type="submit" class="btn">Register</button>
+</form>
+  <p>Already have an account? <a href="/login">Login here</a></p>
+</section>
+
+<%- include('partials/footer') %>
+
