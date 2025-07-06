@@ -1,22 +1,4 @@
 # Algofy: DSA Problem Tracking & Goal Setting
-<!-- Placeholder for your project logo if you have one -->
-## Table of Contents
-
-* [About the Project](#about-the-project)
-* [Features](#features)
-* [Tech Stack](#tech-stack)
-* [Getting Started](#getting-started)
-    * [Prerequisites](#prerequisites)
-    * [Installation](#installation)
-    * [Database Setup](#database-setup)
-    * [Running the Application](#running-the-application)
-* [Usage](#usage)
-* [Project Structure](#project-structure)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgments](#acknowledgments)
-
 ## About the Project
 
 Algofy is a full-stack web application designed to help Data Structures and Algorithms (DSA) enthusiasts track their problem-solving progress across various platforms and set personal goals. Whether you're preparing for interviews, improving your coding skills, or just want to stay consistent, Algofy provides a streamlined way to log solved questions and monitor your daily, weekly, or monthly targets.
@@ -141,20 +123,14 @@ Before you begin, ensure you have the following installed:
 Navigate to `http://localhost:3000` in your web browser.
 
 * **Homepage:** A brief overview of your progress and options.
-    ![Screenshot of Homepage](https://via.placeholder.com/800x450?text=Algofy+Homepage+Screenshot)
+  <img src="public/images/home.png" alt="Screenshot of Homepage" width="600" style="display: block; margin: 0 auto;">
 
-* **Log Solved Questions:**
-    Go to the "Log Question" section (or equivalent) to add details about a newly solved DSA problem.
-    ![Screenshot of Log Question Page](https://via.placeholder.com/800x450?text=Log+Question+Form+Screenshot)
+* **Log In:**
+  <img src="public/images/lg.png" alt="Screenshot of Log Question Page" width="600" style="display: block; margin: 0 auto;">
 
-* **Set Goals:**
-    Visit the "Goals" section to define your daily, weekly, or monthly targets.
-    ![Screenshot of Set Goals Page](https://via.placeholder.com/800x450?text=Set+Goals+Form+Screenshot)
-
-* **View Progress:**
-    Check the dashboard or progress page to see how you're performing against your set goals.
-    ![Screenshot of Progress Dashboard](https://via.placeholder.com/800x450?text=Progress+Dashboard+Screenshot)
-
+* **Profile:**
+  Visit the "Goals" section to define your daily, weekly, or monthly targets.
+  <img src="public/images/prof.png" alt="Screenshot of Set Goals Page" width="600" style="display: block; margin: 0 auto;">
 ## Project Structure
 ```
 ├── public/                 # Static assets (CSS, JS, images) for the frontend
@@ -182,17 +158,13 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 4.  Push to the branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information. *(Create a LICENSE file in your repo if you don't have one)*
-
 ## Contact
 
-Your Name - [Your Email](mailto:your.email@example.com)
-Project Link: [https://github.com/your-username/algofy](https://github.com/your-username/algofy)
+Manish - (mailto:my675890@gmail.com)
+Project Link: [https://github.com/maniishh/algofy](https://github.com/maniishh/algofy)
 
 ## Acknowledgments
 
 * [Express.js](https://expressjs.com/)
 * [PostgreSQL](https://www.postgresql.org/)
-* (Add any other significant libraries or resources you used)
+ 
