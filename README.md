@@ -69,9 +69,6 @@ Navigate to `http://localhost:3000` in your web browser.
 * **Homepage:** A brief overview of your progress and options.
   <img src="public/images/home.png" alt="Screenshot of Homepage" width="600" style="display: block; margin: 0 auto;">
 
-* **Log In:**
-  <img src="public/images/lg.png" alt="Screenshot of Log Question Page" width="600" style="display: block; margin: 0 auto;">
-
 * **Profile:**
   Visit the "Goals" section to define your daily, weekly, or monthly targets.
   <img src="public/images/prof.png" alt="Screenshot of Set Goals Page" width="600" style="display: block; margin: 0 auto;">
