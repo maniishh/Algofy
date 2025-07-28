@@ -18,7 +18,7 @@ This project aims to provide a simple yet effective tool for consistency and mot
     * [Node.js](https://nodejs.org/): JavaScript runtime
     * [Express.js](https://expressjs.com/): Web application framework for Node.js
 * **Database:**
-    * [PostgreSQL](https://www.postgresql.org/): Powerful, open-source relational database
+    * [MongoDB]( ): Powerful, open-source relational database
 * **Frontend:**
     * EJS
     * Tailwind
@@ -34,8 +34,7 @@ Before you begin, ensure you have the following installed:
 
 * [Node.js](https://nodejs.org/en/download/) (LTS recommended)
 * [npm](https://www.npmjs.com/get-npm) (Node Package Manager, comes with Node.js)
-* [PostgreSQL](https://www.postgresql.org/download/)
-* [pgAdmin](https://www.pgadmin.org/download/) (Optional, but recommended for database management)
+* [MongoDB]()
 
 ### Installation
 
@@ -49,61 +48,6 @@ Before you begin, ensure you have the following installed:
     ```bash
     npm install
     ```
-
-### Database Setup
-
-1.  **Create a PostgreSQL database:**
-    Open `pgAdmin` or use the `psql` command line to create a new database.
-    ```sql
-    -- Example psql command
-    CREATE DATABASE algofy_db;
-    CREATE USER algofy_user WITH PASSWORD 'your_secure_password';
-    GRANT ALL PRIVILEGES ON DATABASE algofy_db TO algofy_user;
-    ```
-    **Note:** Replace `algofy_db` and `algofy_user` and `your_secure_password` with your desired values.
-
-2.  **Configure Environment Variables:**
-    Create a `.env` file in the root of your project. This file will store your database connection details and other sensitive information.
-    ```
-    # .env
-    PORT=3000
-    DB_USER=algofy_user
-    DB_HOST=localhost
-    DB_DATABASE=algofy_db
-    DB_PASSWORD=your_secure_password
-    DB_PORT=5432
-    ```
-    **Important:** Replace the placeholder values with your actual PostgreSQL credentials.
-
-3.  **Run Database Migrations (if applicable):**
-    If you're using a migration tool (like Knex.js, Sequelize CLI), run your migrations to set up the database schema.
-    *(If you haven't implemented migrations yet, you would manually create tables via pgAdmin or SQL scripts. For production, migrations are highly recommended.)*
-    ```bash
-    # Example if using Knex.js
-    npx knex migrate:latest
-    ```
-    *(If no migration tool is used, consider adding SQL scripts for table creation here, e.g., `schema.sql`)*
-
-    **Example SQL Schema (put this in a file like `schema.sql` and note how to run it):**
-    ```sql
-    -- schema.sql
-    CREATE TABLE IF NOT EXISTS solved_questions (
-        id SERIAL PRIMARY KEY,
-        question_name VARCHAR(255) NOT NULL,
-        platform VARCHAR(100),
-        date_solved DATE DEFAULT CURRENT_DATE,
-        difficulty VARCHAR(50)
-    );
-
-    CREATE TABLE IF NOT EXISTS goals (
-        id SERIAL PRIMARY KEY,
-        goal_type VARCHAR(50) NOT NULL, -- e.g., 'daily', 'weekly', 'monthly'
-        target_count INTEGER NOT NULL,
-        start_date DATE NOT NULL,
-        end_date DATE NOT NULL
-    );
-    ```
-    You would run this manually via pgAdmin or `psql -U algofy_user -d algofy_db -f schema.sql`.
 
 ### Running the Application
 
@@ -166,5 +110,5 @@ Project Link: [https://github.com/maniishh/algofy](https://github.com/maniishh/a
 ## Acknowledgments
 
 * [Express.js](https://expressjs.com/)
-* [PostgreSQL](https://www.postgresql.org/)
+
  
